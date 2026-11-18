@@ -1,0 +1,122 @@
+window.CandidatosSenadoresMS = [
+  {
+    id: "senador-ms-beto-do-movimento",
+    nome: "BETO DO MOVIMENTO",
+    nomeCompleto: "Jonas Carlos da Conceicao",
+    partido: "PSOL",
+    numero: 500,
+    cargo: "senador",
+    uf: "MS",
+    color: "#159AAE",
+    pautas: ["Agricultura familiar", "Direitos sociais e moradia"],
+    idade: 46
+  },
+  {
+    id: "senador-ms-capitao-contar",
+    nome: "CAPITÃO CONTAR",
+    nomeCompleto: "Renan Barbosa Contar",
+    partido: "PL",
+    numero: 222,
+    cargo: "senador",
+    uf: "MS",
+    color: "#1E4FA6",
+    pautas: ["Segurança pública", "Fiscalização rigorosa"],
+    idade: 42
+  },
+  {
+    id: "senador-ms-daniel-junior",
+    nome: "DANIEL JUNIOR",
+    nomeCompleto: "Daniel Rodrigues Junior",
+    partido: "AGIR",
+    numero: 360,
+    cargo: "senador",
+    uf: "MS",
+    color: "#2FA84F",
+    pautas: ["Desenvolvimento local", "Ação comunitária"],
+    idade: 47
+  },
+  {
+    id: "senador-ms-luiz-lemes",
+    nome: "LUIZ LEMES",
+    nomeCompleto: "Luiz Antonio Lemes de Oliveira",
+    partido: "DC",
+    numero: 277,
+    cargo: "senador",
+    uf: "MS",
+    color: "#E4402F",
+    pautas: ["Infraestrutura", "Engenharia e gestão"],
+    idade: 59
+  },
+  {
+    id: "senador-ms-reinaldo-azambuja",
+    nome: "REINALDO AZAMBUJA",
+    nomeCompleto: "Reinaldo Azambuja Silva",
+    partido: "PL",
+    numero: 223,
+    cargo: "senador",
+    uf: "MS",
+    color: "#0A5C6B",
+    pautas: ["Gestão pública", "Desenvolvimento econômico"],
+    idade: 63
+  },
+  {
+    id: "senador-ms-roberto-oshiro",
+    nome: "ROBERTO OSHIRO",
+    nomeCompleto: "Roberto Tarashigue Oshiro Junior",
+    partido: "NOVO",
+    numero: 300,
+    cargo: "senador",
+    uf: "MS",
+    color: "#7A5300",
+    pautas: ["Reforma tributária", "Empreendedorismo"],
+    idade: 48
+  },
+  {
+    id: "senador-ms-soraya",
+    nome: "SORAYA",
+    nomeCompleto: "Soraya Vieira Thronicke",
+    partido: "PSB",
+    numero: 400,
+    cargo: "senador",
+    uf: "MS",
+    color: "#159AAE",
+    pautas: ["Combate à corrupção", "Atuação parlamentar"],
+    idade: 53
+  },
+  {
+    id: "senador-ms-valderi-garcia",
+    nome: "VALDERI GARCIA",
+    nomeCompleto: "Valderi Garcia",
+    partido: "PCO",
+    numero: 290,
+    cargo: "senador",
+    uf: "MS",
+    color: "#1E4FA6",
+    pautas: ["Direitos indígenas", "Acesso à terra"],
+    idade: 52
+  },
+  {
+    id: "senador-ms-valter-da-comagran",
+    nome: "VALTER DA COMAGRAN",
+    nomeCompleto: "Valter Juvenal de Oliveira",
+    partido: "PRD",
+    numero: 250,
+    cargo: "senador",
+    uf: "MS",
+    color: "#2FA84F",
+    pautas: ["Desenvolvimento agropecuário", "Comércio"],
+    idade: 57
+  },
+  {
+    id: "senador-ms-vander-loubet",
+    nome: "VANDER LOUBET",
+    nomeCompleto: "Vander Luiz dos Santos Loubet",
+    partido: "PT",
+    numero: 131,
+    cargo: "senador",
+    uf: "MS",
+    color: "#E4402F",
+    pautas: ["Articulação política", "Investimentos federais"],
+    idade: 62
+  }
+];

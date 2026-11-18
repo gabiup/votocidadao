@@ -1,0 +1,603 @@
+/* ===== Voto Cidadão — Estilos Personalizados ===== */
+
+:root {
+  --teal-light: #4FD3DA;
+  --teal: #159AAE;
+  --teal-deep: #0A5C6B;
+  --teal-ink: #063842;
+  --green: #2FA84F;
+  --green-deep: #1F7A38;
+  --blue: #1E4FA6;
+  --yellow: #FFC530;
+  --red: #E4402F;
+  --paper: #F5FAFA;
+  --paper-dim: #E7F2F1;
+  --ink: #0C2226;
+  --ink-soft: #3E5A5D;
+  --line: rgba(6, 56, 66, 0.12);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Archivo', sans-serif;
+  background: var(--paper);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+}
+
+body, html {
+  max-width: 100vw;
+  overflow-x: hidden !important;
+}
+
+:focus-visible {
+  outline: 3px solid var(--yellow);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+/* ===== Tipografia ===== */
+.font-display { font-family: 'Archivo Black', 'Archivo', sans-serif; }
+.font-data { font-family: 'Space Grotesk', monospace; }
+
+/* ===== Layout ===== */
+.wrap { max-width: 1080px; margin: 0 auto; padding: 0 20px; }
+
+/* ===== Botões ===== */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 13px 22px;
+  border-radius: 999px;
+  font-weight: 800;
+  font-size: 15px;
+  transition: all 0.2s ease;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: 'Archivo', sans-serif;
+}
+.btn-primary { background: var(--yellow); color: var(--teal-ink); }
+.btn-primary:hover { background: #ffd35c; }
+.btn-outline { border: 2px solid currentColor; background: transparent; }
+.btn-white { background: #fff; color: var(--teal-deep); }
+.btn-block { width: 100%; justify-content: center; }
+.btn:disabled { opacity: 0.5; cursor: not-allowed; }
+
+/* ===== Badges e Pills ===== */
+.badge-num {
+  font-family: 'Space Grotesk', monospace;
+  font-weight: 700;
+  background: var(--teal-ink);
+  color: #fff;
+  border-radius: 999px;
+  padding: 4px 12px;
+  font-size: 13px;
+  letter-spacing: 0.03em;
+}
+
+.pill {
+  display: inline-block;
+  padding: 5px 12px;
+  border-radius: 999px;
+  font-size: 12.5px;
+  font-weight: 700;
+  font-family: 'Space Grotesk', monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.pill-green { background: rgba(47, 168, 79, 0.15); color: var(--green-deep); }
+.pill-blue { background: rgba(30, 79, 166, 0.14); color: var(--blue); }
+.pill-red { background: rgba(228, 64, 47, 0.14); color: var(--red); }
+.pill-yellow { background: rgba(255, 197, 48, 0.28); color: #6b4c00; }
+
+/* ===== Hero / Teal Shell ===== */
+.teal-shell {
+  position: relative;
+  /* overflow: hidden; */
+  background: linear-gradient(165deg, var(--teal-light) 0%, var(--teal) 48%, var(--teal-deep) 100%);
+  color: #fff;
+  padding-bottom: 6px;
+}
+
+/* ===== Blobs decorativos ===== */
+.blob {
+  position: absolute;
+  border-radius: 44% 56% 60% 40% / 50% 45% 55% 50%;
+  background: rgba(255, 255, 255, 0.14);
+  pointer-events: none;
+}
+.blob-a { width: 220px; height: 220px; top: -90px; right: -60px; }
+.blob-b { width: 120px; height: 120px; top: 40px; right: 70px; background: rgba(10, 92, 107, 0.18); }
+.blob-c { width: 160px; height: 160px; bottom: -80px; left: -50px; background: rgba(255, 255, 255, 0.08); }
+
+/* ===== Tag Eleições ===== */
+.eleicoes-tag {
+  font-family: 'Archivo', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  color: #fff;
+  background: rgba(6, 56, 66, 0.35);
+  padding: 6px 14px;
+  border-radius: 6px;
+  letter-spacing: 0.06em;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.eleicoes-tag b {
+  font-family: 'Archivo Black', sans-serif;
+  color: var(--teal-light);
+  margin-left: 2px;
+  font-size: 13px;
+}
+
+/* ===== Cards de Cargo (Carrossel) antigo 14/09 ===== */
+/* .cargo-slide {
+  scroll-snap-align: center;
+  flex: 0 0 auto;
+  width: min(340px, 86vw);
+  min-height: 520px;
+  background: rgba(255, 255, 255, 0.16);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 26px;
+  padding: 22px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+} */
+
+/* ===== Cards de Cargo (Carrossel) ===== */
+.cargo-slide {
+  scroll-snap-align: center;
+  flex: 0 0 auto;
+  width: min(340px, 86vw);
+  min-height: 440px; /* Garante altura uniforme para todos */
+  background: rgba(255, 255, 255, 0.16);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 26px;
+  padding: 22px;
+  color: #fff;
+}
+
+/* ===== Cards de Região ===== */
+.region-card {
+  flex: 0 0 auto;
+  width: 168px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 14px;
+  box-shadow: 0 8px 20px rgba(6, 56, 66, 0.08);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+  cursor: pointer;
+  text-align: left;
+  border: none;
+  font-family: 'Archivo', sans-serif;
+}
+.region-card:hover { transform: translateY(-2px); }
+
+/* ===== Stat Box ===== */
+.stat-box {
+  background: var(--paper);
+  border-radius: 10px;
+  padding: 14px;
+  border: 1px solid var(--line);
+}
+
+/* ===== Disclaimer ===== */
+.disclaimer {
+  margin-top: 14px;
+  font-size: 12.5px;
+  color: var(--ink-soft);
+  background: var(--paper-dim);
+  border-left: 3px solid var(--yellow);
+  padding: 10px 12px;
+  border-radius: 6px;
+}
+
+/* ===== Timeline ===== */
+.timeline-item {
+  position: relative;
+  padding-left: 22px;
+  padding-bottom: 18px;
+  border-left: 2px solid var(--line);
+}
+.timeline-item:last-child { border-color: transparent; padding-bottom: 0; }
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -6px;
+  top: 2px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--teal);
+}
+
+/* ===== Scrollbar oculto ===== */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* ===== Animações ===== */
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes slideUp { from { transform: translateY(40px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+@keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+.animate-fade-in { animation: fadeIn 0.2s ease; }
+.animate-slide-up { animation: slideUp 0.3s ease; }
+.animate-spin { animation: spin 0.8s linear infinite; }
+
+/* ===== Modo Acessibilidade Sênior ===== */
+html.senior body { font-size: 19px; line-height: 1.65; }
+html.senior .btn { padding: 16px 26px; }
+/* ===== CORREÇÃO COMPLETA PARA O MODO SÊNIOR ===== */
+html.senior body {
+  font-size: 20px !important;
+  line-height: 1.7 !important;
+}
+
+html.senior h1 { font-size: 2.2rem !important; }
+html.senior h2 { font-size: 1.8rem !important; }
+html.senior h3 { font-size: 1.5rem !important; }
+html.senior p, 
+html.senior span, 
+html.senior a, 
+html.senior label, 
+html.senior input, 
+html.senior select, 
+html.senior button {
+  font-size: 1.15rem !important;
+}
+
+html.senior .pill, 
+html.senior .badge-num {
+  font-size: 0.95rem !important;
+}
+
+/* ===== CORREÇÃO DEFINITIVA DA URNA NO MODO SÊNIOR ===== */
+html.senior #urna-parallax .bg-black\/25,
+html.senior #urna-parallax .grid span,
+html.senior #urna-parallax .flex span {
+  font-size: 11px !important;
+  padding: 2px !important;
+}
+
+html.senior #urna-parallax div {
+  font-size: 13px !important;
+}
+
+/* ===== PONTE DE HOVER INVISÍVEL PARA SUBMENU ===== */
+
+/* 1. Garante que o contêiner do trigger permaneça ativo durante a navegação */
+#submenu-trigger {
+  position: relative;
+  padding-bottom: 12px; /* Cria uma área estendida para o mouse não perder o hover */
+  margin-bottom: -12px;
+}
+
+/* 2. Cria uma ponte invisível preenchendo o espaço exato entre o botão e o submenu */
+#submenu::before {
+  content: "";
+  position: absolute;
+  top: -16px; /* Avança 16px para cima cobrindo o gap até o botão */
+  left: 0;
+  right: 0;
+  height: 16px;
+  background: transparent; /* Invisível ao usuário, mas detectável pelo ponteiro do mouse */
+}
+
+/* ===== Z-index ===== */
+.z-50 { z-index: 50; }
+.z-60 { z-index: 60; }
+.z-70 { z-index: 70; }
+.z-80 { z-index: 80; }
+.z-90 { z-index: 90; }
+
+/* ===== Links ===== */
+a { text-decoration: none; color: inherit; }
+button { cursor: pointer; font-family: 'Archivo', sans-serif; }
+
+/* ===== Responsividade do Header ===== */
+@media (max-width: 1023px) {
+  .desktop-nav { display: none !important; }
+  .mobile-menu-btn { display: flex !important; }
+}
+@media (min-width: 1024px) {
+  .mobile-menu-btn { display: none !important; }
+}
+
+
+/* ===== BOTÃO GUIA DO ELEITOR (HOVER) ===== */
+.btn-guia-eleitor {
+  transition: all 0.2s ease-in-out !important;
+}
+
+.btn-guia-eleitor:hover {
+  background-color: rgba(255, 255, 255, 0.20) !important;
+  border-color: #ffffff !important;
+  color: #ffffff !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== PADRONIZAÇÃO GLOBAL DE HOVER PARA TODOS OS BOTÕES ===== */
+
+/* 1. Animação de transição base para todos os botões e links com classe .btn */
+.btn, 
+button,
+#main-content .btn {
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), 
+              box-shadow 0.2s cubic-bezier(0.16, 1, 0.3, 1), 
+              background-color 0.2s ease, 
+              border-color 0.2s ease !important;
+  will-change: transform, box-shadow;
+}
+
+/* 2. Efeito de Elevação, Sombra (Auto-relevo) no Hover */
+.btn:hover, 
+button:hover,
+#main-content .btn:hover {
+  transform: translateY(-2.5px) !important;
+  box-shadow: 0 6px 18px rgba(6, 56, 66, 0.18) !important;
+}
+
+/* 3. Feedback visual ao clicar (Efeito de clique real) */
+.btn:active, 
+button:active,
+#main-content .btn:active {
+  transform: translateY(-0.5px) !important;
+  box-shadow: 0 2px 8px rgba(6, 56, 66, 0.12) !important;
+}
+
+/* 4. Ajuste específico para os botões de contorno (Outlined) */
+.btn-outline:hover {
+  background-color: rgba(255, 255, 255, 0.18) !important;
+  border-color: #ffffff !important;
+  color: #ffffff !important;
+}
+
+/* 5. Ajuste para os botões primários escuros (Teal) */
+.btn-primary:hover,
+.bg-\[var\(--teal-deep\)\]:hover {
+  filter: brightness(1.08);
+}
+
+/* ===== BLOQUEIO ABSOLUTO DE MOVIMENTO NAS SETAS DO CARROSSEL E REGIÕES ===== */
+
+/* Trava botões de ID das setas */
+#carousel-prev,
+#carousel-next,
+#carousel-prev:hover,
+#carousel-next:hover,
+#carousel-prev:active,
+#carousel-next:active {
+  transform: translateY(-50%) !important; /* Mantém estritamente o alinhamento vertical original */
+  top: 50% !important;
+  margin: 0 !important;
+  box-shadow: 0 8px 24px rgba(6, 56, 66, 0.18) !important;
+}
+
+/* Trava botões circulares de rolagem de regiões */
+button[aria-label*="região"],
+button[aria-label*="Região"],
+button[aria-label*="anterior"],
+button[aria-label*="Próxima"],
+button[aria-label*="região"]:hover,
+button[aria-label*="Região"]:hover {
+  transform: none !important;
+  margin: 0 !important;
+  box-shadow: 0 2px 8px rgba(6, 56, 66, 0.08) !important;
+}
+
+/*Links em textos*/
+.link-texto {
+  color: #063842; /* Cor azul de destaque */
+  text-decoration: underline; /* Deixa sublinhado */
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.link-texto:hover {
+  color: #003d82; /* Cor ao passar o mouse */
+}
+
+/* ===== CORREÇÃO DEFINITIVA DE BADGES E ELEMENTOS DO PRINT ===== */
+
+/* Padroniza a badge de numeração do candidato para não descentralizar */
+.badge-num {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-width: 44px;
+  height: 28px;
+  background-color: var(--teal-ink);
+  color: #fff;
+  border-radius: 999px;
+  font-family: 'Space Grotesk', monospace;
+  font-weight: 700;
+  font-size: 13px;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+/* ============================================================
+   CORREÇÃO DEFINITIVA E ABSOLUTA PARA O PRINT DA COLINHA (HTML2CANVAS)
+   ============================================================ */
+
+/* 1. Padronização normal da badge na tela do site */
+.badge-num {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-width: 44px;
+  height: 28px;
+  background-color: var(--teal-ink);
+  color: #fff;
+  border-radius: 999px;
+  font-family: 'Space Grotesk', monospace;
+  font-weight: 700;
+  font-size: 13px;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+/* 2. Regras restritas estritamente ao momento da exportação da imagem */
+.exportando-colinha {
+  padding: 40px 32px !important;
+  width: 700px !important;
+  max-width: 700px !important;
+  margin: 0 auto !important;
+  background-color: #FFFFFF !important;
+}
+
+/* 3. Transforma o card do candidato em um layout de tabela simples para o html2canvas não errar os tamanhos */
+.exportando-colinha .bg-white.rounded-xl {
+  display: block !important;
+  position: relative !important;
+  padding: 16px 20px !important;
+  background-color: #FFFFFF !important;
+  min-height: 72px !important;
+  box-sizing: border-box !important;
+}
+
+/* 4. Trava o bloco de texto (Nome e Partido) à esquerda sem sofrer corte flex */
+.exportando-colinha .min-w-0.flex-1 {
+  display: block !important;
+  width: 520px !important; /* Largura segura para o nome nunca estourar */
+  float: left !important;
+}
+
+/* 5. Correção absoluta do nome cortado */
+.exportando-colinha .truncate {
+  overflow: visible !important;
+  text-overflow: clip !important;
+  white-space: normal !important;
+  word-break: break-word !important;
+  font-size: 15px !important;
+  font-weight: 700 !important;
+  line-height: 1.35 !important;
+  color: #0C2226 !important;
+  display: block !important;
+  max-width: 100% !important;
+}
+
+/* 6. Fixação absoluta da badge numérica à direita do card */
+.exportando-colinha .badge-num {
+  position: absolute !important;
+  right: 64px !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  height: 36px !important;
+  min-width: 62px !important;
+  padding: 0 14px !important;
+  background-color: #063842 !important;
+  color: #FFFFFF !important;
+  border-radius: 999px !important;
+  font-family: 'Space Grotesk', monospace !important;
+  font-weight: 700 !important;
+  font-size: 14.5px !important;
+  box-sizing: border-box !important;
+}
+
+/* 7. Fixação absoluta do botão de lixeira na ponta direita */
+.exportando-colinha button[title*="Remover"],
+.exportando-colinha button[onclick*="removerDaColinha"] {
+  position: absolute !important;
+  right: 18px !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 32px !important;
+  height: 32px !important;
+}
+
+/* ============================================================
+   AJUSTE DE LAYOUT DA COLINHA PARA O PADRÃO URNA OFICIAL
+   ============================================================ */
+
+/* Garante proporção visual limpa no papel gerado */
+.exportando-colinha {
+  width: 700px !important;
+  max-width: 700px !important;
+  padding: 36px 28px !important;
+  background-color: #FFFFFF !important;
+}
+
+/* Estilização dos blocos de cargos na colinha exportada */
+.exportando-colinha .bg-white.rounded-2xl {
+  border: 1.5px solid rgba(21, 154, 174, 0.25) !important;
+  background-color: #F8FBFB !important;
+  margin-bottom: 12px !important;
+  padding: 14px 18px !important;
+}
+
+
+/* ============================================================
+   OCULTAR LIXEIRA APENAS NA IMAGEM GERADA (PRINT)
+   ============================================================ */
+.exportando-colinha .btn-remover-colinha,
+.exportando-colinha button[onclick*="removerDaColinha"],
+.exportando-colinha button[title*="Remover"] {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+  opacity: 0 !important;
+  position: absolute !important;
+  pointer-events: none !important;
+}
+
+/* ============================================================
+   AJUSTE DE PADDING E ALTURA DAS CAIXINHAS SOMENTE NA IMAGEM GERADA
+   ============================================================ */
+.exportando-colinha div[style*="display: flex"] {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  height: 36px !important; /* Ajuste para a altura ideal no print */
+}
+
+/* ============================================================
+   CORREÇÃO DEFINITIVA DO ALINHAMENTO VERTICAL (EIXO Y) NO PRINT
+   ============================================================ */
+
+/* 1. Garante que o quadradinho dentro do print tenha uma altura fixa rigorosa */
+.exportando-colinha .digito-caixa,
+.exportando-colinha #papel-colinha .font-data {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  height: 38px !important;
+  width: 32px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+  line-height: 1 !important;
+}
+
+/* 2. Remove qualquer margem interna ou distorção que o canvas herde do Tailwind */
+.exportando-colinha .font-data span,
+.exportando-colinha .digito-caixa * {
+  display: inline-block !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 1 !important;
+
+}

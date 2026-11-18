@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QT157F86YZ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-QT157F86YZ');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voto Cidadão — Eleições Brasil 2026 sem interferência</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <meta name="description"
+          content="Compare candidatos, números de urna e informações das eleições brasileiras 2026, saiba em quem votar na usa região, por cargo. De forma simples e transparente, fontes confiáveis e seguras.">
+  <meta name="robots" content="index, follow">
+
+  <link rel="canonical" href="https://www.votocidadao.com.br/">
+  <meta name="author" content="Voto Cidadão">
+
+  <!-- Open Graph — WhatsApp, Facebook etc. -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Voto Cidadão | Veja todos os candidatos das eleições 2026">
+    <meta property="og:description"
+          content="Compare candidatos, números de urna e informações das eleições brasileiras 2026, saiba em quem votar na usa região, por cargo.">
+    <meta property="og:url" content="https://www.votocidadao.com.br/">
+    <meta property="og:image" content="https://www.votocidadao.com.br/img/compartilhamento.png">
+
+    <!-- Instagram/WhatsApp geralmente usam OG -->
+    <meta property="og:locale" content="pt_BR">
+
+    <!-- Twitter/X -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Voto Cidadão | Veja todos os candidatos das eleições 2026">
+    <meta name="twitter:description"
+          content="Compare candidatos, números de urna e informações das eleições brasileiras 2026, saiba em quem votar na usa região, por cargo.">
+    <meta name="twitter:image" content="https://www.votocidadao.com.br/img/compartilhamento.png">
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: {} },
+    };
+  </script>
+
+  <!-- Fontes Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:ital,wght@0,400;0,500;0,600;0,700;0,800;1,600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app" class="min-h-screen flex flex-col overflow-x-hidden">
+
+    <!-- ===== HEADER ===== -->
+    <div id="header-wrapper" class="teal-shell relative z-50">
+      <div class="relative z-50 flex items-center justify-between px-5 max-w-[1080px] mx-auto py-4">
+        <!-- Logo -->
+        <a href="#/" onclick="navigate('/'); return false;" class="flex items-center gap-2.5">
+          <img src="img/logo_branca.png" alt="logo do site voto cidadão" title="imagem de voto cidadão, com icone de certo"/>
+        </a>
+
+        <!-- Desktop Nav -->
+        <nav class="desktop-nav hidden lg:flex gap-1 items-center relative z-50">
+          <a href="#/" onclick="navigate('/'); return false;" id="nav-home" class="px-3.5 py-2 rounded-full font-bold text-[13.5px] text-white transition-colors hover:bg-white/15">Início</a>
+
+          <!-- CÓDIGO NOVO (AJUSTADO E COMPACTO) -->
+          <div class="relative" id="submenu-trigger" onmouseenter="openSubmenu()" onmouseleave="closeSubmenu()">
+            <a href="#/candidatos" onclick="navigate('/candidatos'); return false;" id="nav-candidatos" class="px-3.5 py-2 rounded-full font-bold text-[13.5px] text-white transition-colors hover:bg-white/15 inline-block">Candidatos ▾</a>
+            <div id="submenu" class="absolute top-[calc(100%+8px)] left-0 bg-white text-[var(--ink)] rounded-2xl shadow-[0_16px_36px_rgba(6,56,66,0.22)] p-3.5 w-60 border border-[var(--line)] z-50 hidden">
+              <h4 class="font-data text-xs tracking-wider uppercase text-[var(--ink-soft)] mb-2 px-1">Por cargo</h4>
+              <ul class="list-none space-y-1" id="submenu-cargos"></ul>
+            </div>
+          </div>
+
+          <!-- <a href="votacoes.html" class="px-3.5 py-2 rounded-full font-bold text-[13.5px] text-white transition-colors hover:bg-white/15">Como votaram?</a> -->
+          <a href="colinha.html" class="px-3.5 py-2 rounded-full font-bold text-[13.5px] text-white transition-colors hover:bg-white/15">Colinha</a>
+          <a href="#/guia-do-eleitor" onclick="navigate('/guia-do-eleitor'); return false;" id="nav-guia" class="px-3.5 py-2 rounded-full font-bold text-[13.5px] text-white transition-colors hover:bg-white/15">Guia do Eleitor</a>
+          <a href="#/links-uteis" onclick="navigate('/links-uteis'); return false;" id="nav-links" class="px-3.5 py-2 rounded-full font-bold text-[13.5px] text-white transition-colors hover:bg-white/15">Links Úteis</a>
+          
+        </nav>
+
+        <!-- Right side -->
+        <div class="flex items-center gap-2.5">
+          <span class="eleicoes-tag">ELEIÇÕES <b>2026</b></span>
+
+          <button onclick="openMobileMenu()" class="mobile-menu-btn hidden lg:hidden w-[42px] h-[42px] rounded-xl bg-white/20 flex items-center justify-center shrink-0" aria-label="Abrir menu">
+            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Menu (hidden by default) -->
+      <div id="mobile-menu" class="fixed inset-0 z-[60] bg-[var(--teal-ink)] text-white p-5 overflow-y-auto hidden">
+        <div class="flex justify-end mb-2.5">
+          <button onclick="closeMobileMenu()" class="w-[42px] h-[42px] rounded-xl bg-white/15 flex items-center justify-center" aria-label="Fechar menu">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+          </button>
+        </div>
+        <a href="#/" onclick="navigate('/'); closeMobileMenu(); return false;" class="block w-full text-left py-3.5 font-display text-lg border-b border-white/15">Início</a>
+        <a href="#/candidatos" onclick="navigate('/candidatos'); closeMobileMenu(); return false;" class="block w-full text-left py-3.5 font-display text-lg border-b border-white/15">Candidatos</a>
+        <div class="py-2" id="mobile-cargos"></div>
+        
+        <!-- NOVOS ITENS INSERIDOS NO MOBILE -->
+        <!-- <a href="votacoes.html" onclick="closeMobileMenu();" class="block w-full text-left py-3.5 font-display text-lg border-b border-white/15">Como votaram?</a> -->
+        <a href="colinha.html" onclick="closeMobileMenu();" class="block w-full text-left py-3.5 font-display text-lg border-b border-white/15">Colinha</a>
+        
+        <a href="#/guia-do-eleitor" onclick="navigate('/guia-do-eleitor'); closeMobileMenu(); return false;" class="block w-full text-left py-3.5 font-display text-lg border-b border-white/15">Guia do Eleitor</a>
+        <a href="#/links-uteis" onclick="navigate('/links-uteis'); closeMobileMenu(); return false;" class="block w-full text-left py-3.5 font-display text-lg border-b border-white/15">Links Úteis</a>
+        <a href="#/fale-conosco" onclick="navigate('/fale-conosco'); closeMobileMenu(); return false;" class="block w-full text-left py-3.5 font-display text-lg border-b border-white/15">Fale Conosco</a>
+      </div>
+    </div>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main id="main-content" class="flex-1">
+      <!-- Conteúdo Estático de Abertura Rápida (Evita a tela em branco) -->
+      <div class="teal-shell relative overflow-hidden py-12">
+        <div class="wrap relative z-20 text-center text-white">
+          <span class="pill bg-white/20 text-white inline-flex items-center gap-1.5 mb-2">ELEIÇÕES 2026</span>
+          <h1 class="font-display text-[28px] sm:text-[36px]">Carregando Voto Cidadão...</h1>
+          <p class="mt-2 text-sm text-white/80">Organizando informações verificadas para você.</p>
+          
+          <!-- Indicador visual leve de carregamento estático -->
+          <div class="mt-6 flex justify-center items-center gap-2">
+            <div class="w-3 h-3 bg-white rounded-full animate-bounce"></div>
+            <div class="w-3 h-3 bg-white rounded-full animate-bounce [animation-delay:0.2s]"></div>
+            <div class="w-3 h-3 bg-white rounded-full animate-bounce [animation-delay:0.4s]"></div>
+          </div>
+        </div>
+      </div>
+
+
+
+    </main>
+
+<!-- ===== FOOTER ===== -->
+    <footer class="bg-[var(--teal-ink)] text-[#CDEEF0] pt-10 pb-6">
+      <div class="wrap">
+        <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4 lg:gap-6">
+          
+          <!-- Coluna 1: Sobre -->
+          <div>
+            <h5 class="font-display text-white text-sm mb-3">Voto Cidadão</h5>
+            <p class="text-[13.5px] text-[#9FD7DA] leading-relaxed">Informação eleitoral imparcial, verificável e acessível — direto das fontes oficiais, sem viés e sem juízo de valor. Rumo às Eleições 2026.</p>
+          </div>
+
+          <!-- Coluna 2: Navegar -->
+          <div>
+            <h5 class="font-display text-white text-sm mb-3">Navegar</h5>
+            <a href="quem-somos.html" class="block text-[13.5px] text-[#9FD7DA] mb-2 hover:text-white">Quem Somos</a>
+            <a href="#/candidatos" onclick="navigate('/candidatos'); window.scrollTo(0,0); return false;" class="block text-[13.5px] text-[#9FD7DA] mb-2 hover:text-white">Candidatos</a>
+            <!-- <a href="votacoes.html" class="block text-[13.5px] text-[#9FD7DA] mb-2 hover:text-white">Como votaram?</a> -->
+            <a href="colinha.html" class="block text-[13.5px] text-[#9FD7DA] mb-2 hover:text-white">Colinha</a>
+          </div>
+
+          <!-- Coluna 3: Ajuda & Suporte -->
+          <div>
+            <h5 class="font-display text-white text-sm mb-3">Ajuda</h5>
+            <a href="#/guia-do-eleitor" onclick="navigate('/guia-do-eleitor'); window.scrollTo(0,0); return false;" class="block text-[13.5px] text-[#9FD7DA] mb-2 hover:text-white">Guia do Eleitor</a>
+            <a href="#/links-uteis" onclick="navigate('/links-uteis'); window.scrollTo(0,0); return false;" class="block text-[13.5px] text-[#9FD7DA] mb-2 hover:text-white">Links Úteis</a>
+            <a href="#/fale-conosco" onclick="navigate('/fale-conosco'); window.scrollTo(0,0); return false;" class="block text-[13.5px] text-[#9FD7DA] mb-2 hover:text-white">Fale Conosco</a>
+          </div>
+
+          <!-- Coluna 4: Fontes Oficial -->
+          <div>
+            <h5 class="font-display text-white text-sm mb-3">Fontes oficiais</h5>
+            <a href="https://divulgacandcontas.tse.jus.br" target="_blank" rel="noopener" class="block text-[13.5px] text-[#9FD7DA] mb-2 hover:text-white">TSE — DivulgaCandContas</a>
+            <a href="https://www.justicaeleitoral.jus.br/fato-ou-boato" target="_blank" rel="noopener" class="block text-[13.5px] text-[#9FD7DA] mb-2 hover:text-white">Fato ou Boato</a>
+          </div>
+
+        </div>
+
+        <p class="mt-8 pt-4 border-t border-white/15 text-xs text-center text-[#6FA9AD]">Projeto independente e apartidário. O intuito é organizar de forma mais acessível as principais informações para o cidadão conseguir votar consciente.</p>
+      </div>
+    </footer>
+
+    <!-- ===== SENIOR FAB ===== -->
+    <button id="senior-fab" onclick="toggleSenior()" class="fixed bottom-5 right-5 z-[70] bg-[var(--yellow)] text-[var(--teal-ink)] w-[58px] h-[58px] rounded-full font-display text-[15px] shadow-[0_16px_36px_rgba(6,56,66,0.22)] flex items-center justify-center border-[3px] border-[var(--teal-ink)]" title="Modo acessibilidade sênior">Aa+</button>
+    <div id="senior-toast" class="fixed bottom-[90px] left-1/2 -translate-x-1/2 bg-[var(--ink)] text-white px-4.5 py-3 rounded-full text-[13.5px] font-semibold z-[80] hidden"></div>
+
+    <!-- ===== MODAL DOSSIÊ ===== -->
+    <div id="dossie-modal" class="fixed inset-0 z-[90] hidden items-center justify-center bg-black/50 p-3 sm:p-4" onclick="closeDossie(event)">
+      <div class="bg-white w-[94vw] sm:max-w-[640px] h-[85vh] sm:h-[650px] rounded-3xl overflow-hidden flex flex-col shadow-2xl animate-slide-up" onclick="event.stopPropagation()">
+        
+        <!-- Cabeçalho (Fixo no topo) -->
+        <div id="dossie-header" class="teal-shell px-5 sm:px-6 py-5 shrink-0"></div>
+        
+        <!-- Estatísticas / Avisos (Se houver, fica fixo) -->
+        <div id="dossie-stats" class="grid grid-cols-4 gap-2 px-5 sm:px-6 py-4 bg-[var(--paper)] border-b border-[var(--line)] shrink-0"></div>
+        
+        <!-- Abas (Fixas logo abaixo do topo) -->
+        <div id="dossie-tabs" class="flex gap-1 px-3 sm:px-4 pt-3 overflow-x-auto no-scrollbar shrink-0 border-b border-[var(--line)] bg-white"></div>
+        
+        <!-- Conteúdo com Rolagem Independente (overflow-y-auto e flex-1 garantem que a barra de rolagem fique só aqui) -->
+        <div id="dossie-content" class="overflow-y-auto px-5 sm:px-6 py-5 flex-1 bg-white"></div>
+        
+        <!-- Rodapé / Botão de Compartilhar (Fixo embaixo) -->
+        <div class="px-5 sm:px-6 py-4 border-t border-[var(--line)] bg-white shrink-0">
+          <a id="dossie-share" href="#" target="_blank" rel="noopener" class="btn btn-block text-white" style="background: #25D366">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 6.632a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"/></svg>
+            Compartilhar no WhatsApp
+          </a>
+            <button
+              id="dossie-instagram"
+              type="button"
+              onclick="compartilharInstagramStory()"
+              class="w-full mt-2 bg-gradient-to-r from-purple-600 via-pink-500 to-orange-400 text-white font-bold py-3.5 px-5 rounded-full flex items-center justify-center gap-2 hover:opacity-90 transition-opacity"
+          >
+              <svg
+                  class="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+              >
+                  <rect
+                      x="3"
+                      y="3"
+                      width="18"
+                      height="18"
+                      rx="5"
+                  ></rect>
+
+                  <circle
+                      cx="12"
+                      cy="12"
+                      r="4"
+                  ></circle>
+
+                  <circle
+                      cx="17.5"
+                      cy="6.5"
+                      r="1"
+                      fill="currentColor"
+                      stroke="none"
+                  ></circle>
+              </svg>
+
+              Compartilhar no Instagram
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- MODAL DE CONFIRMAÇÃO DE ENVIO -->
+    <div id="modal-sucesso" class="fixed inset-0 bg-black/60 z-50 hidden items-center justify-center p-4 backdrop-blur-sm">
+      <div class="bg-white rounded-2xl max-w-[400px] w-full p-6 text-center relative border border-[var(--line)] shadow-2xl">
+        <div class="w-12 h-12 rounded-full bg-[#EAF5F5] text-[var(--teal-deep)] flex items-center justify-center mx-auto mb-3">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
+          </svg>
+        </div>
+        <h3 class="font-display text-[20px] text-[var(--ink)] mb-1">Mensagem enviada com sucesso!</h3>
+        <p class="text-[13.5px] text-[var(--ink-soft)] mb-5">Obrigado pelo seu contato. Sua mensagem foi recebida e será analisada por nossa equipe.</p>
+        <button type="button" onclick="closeModalSucesso()" class="btn btn-primary w-full py-2.5 text-sm">
+          OK
+        </button>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Seus scripts -->
+  <script src="dossies.js" defer></script>
+  
+  <!-- Adicione a linha abaixo apontando para a pasta correta -->
+  <script src="dados-eleitorais/rj/dossies-governador-rj.js" defer></script>
+  <script src="dados-eleitorais/sp/dossies-governador-sp.js" defer></script>
+  <script src="dados-eleitorais/mg/dossies-governador-mg.js" defer></script>
+  <script src="dados-eleitorais/es/dossies-governador-es.js" defer></script>
+  <script src="dados-eleitorais/ba/dossies-governador-ba.js" defer></script>
+
+
+  <!-- SCRIPT PRINCIPAL -->
+
+  <script src="script.js" defer></script>
+  <script src="compartilhar-story.js"></script>
+
+</body>
+</html>

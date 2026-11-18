@@ -1,0 +1,110 @@
+window.CandidatosSenadoresAM = [
+  {
+    id: "senador-am-capitao-alberto-neto",
+    nome: "CAPITÃO ALBERTO NETO",
+    nomeCompleto: "Alberto Barros Cavalcante Neto",
+    partido: "PL",
+    numero: 222,
+    cargo: "senador",
+    uf: "AM",
+    color: "#159AAE",
+    pautas: ["Segurança pública", "Fiscalização federal"],
+    idade: 44
+  },
+  {
+    id: "senador-am-dailson-correa",
+    nome: "DAILSON CORRÊA",
+    nomeCompleto: "Dailson de Queiroz Corrêa",
+    partido: "DC",
+    numero: 277,
+    cargo: "senador",
+    uf: "AM",
+    color: "#1E4FA6",
+    pautas: ["Comércio regional", "Desenvolvimento local"],
+    idade: 60
+  },
+  {
+    id: "senador-am-eduardo-braga",
+    nome: "EDUARDO BRAGA",
+    nomeCompleto: "Carlos Eduardo de Souza Braga",
+    partido: "MDB",
+    numero: 155,
+    cargo: "senador",
+    uf: "AM",
+    color: "#2FA84F",
+    pautas: ["Economia", "Desenvolvimento da Amazônia"],
+    idade: 65
+  },
+  {
+    id: "senador-am-evandro-de-oliveira",
+    nome: "EVANDRO DE OLIVEIRA",
+    nomeCompleto: "José Evandro de Oliveira",
+    partido: "PSTU",
+    numero: 160,
+    cargo: "senador",
+    uf: "AM",
+    color: "#E4402F",
+    pautas: ["Direitos trabalhistas", "Serviços públicos"],
+    idade: 47
+  },
+  {
+    id: "senador-am-ismael-munduruku",
+    nome: "ISMAEL MUNDURUKU",
+    nomeCompleto: "Ismael Franklin Gonçalves",
+    partido: "REDE",
+    numero: 180,
+    cargo: "senador",
+    uf: "AM",
+    color: "#0A5C6B",
+    pautas: ["Povos originários", "Meio ambiente"],
+    idade: 44
+  },
+  {
+    id: "senador-am-plinio-valerio",
+    nome: "PLÍNIO VALÉRIO",
+    nomeCompleto: "Francisco Plínio Valério Tomaz",
+    partido: "PSDB",
+    numero: 456,
+    cargo: "senador",
+    uf: "AM",
+    color: "#7A5300",
+    pautas: ["Combate à corrupção", "Transparência pública"],
+    idade: 71
+  },
+  {
+    id: "senador-am-professora-evany",
+    nome: "PROFESSORA EVANY",
+    nomeCompleto: "Maria Evany do Nascimento",
+    partido: "PSOL",
+    numero: 500,
+    cargo: "senador",
+    uf: "AM",
+    color: "#159AAE",
+    pautas: ["Educação pública", "Direitos sociais"],
+    idade: 52
+  },
+  {
+    id: "senador-am-wilson-lima",
+    nome: "WILSON LIMA",
+    nomeCompleto: "Wilson Miranda Lima",
+    partido: "UNIÃO",
+    numero: 444,
+    cargo: "senador",
+    uf: "AM",
+    color: "#1E4FA6",
+    pautas: ["Gestão pública", "Infraestrutura estadual"],
+    idade: 50
+  },
+  {
+    id: "senador-am-xuxa-do-amazonas",
+    nome: "XUXA DO AMAZONAS",
+    nomeCompleto: "Milton Rogério Moreira Pinto",
+    partido: "MOBILIZA",
+    numero: 333,
+    cargo: "senador",
+    uf: "AM",
+    color: "#2FA84F",
+    pautas: ["Ação comunitária", "Segurança"],
+    idade: 62
+  }
+];

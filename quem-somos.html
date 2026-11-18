@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QT157F86YZ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-QT157F86YZ');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quem Somos — Voto Cidadão</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <meta name="description" content="Conheça o Voto Cidadão, uma iniciativa independente e apartidária focada em organizar informações eleitorais com clareza e transparência.">
+  <meta name="robots" content="index, follow">
+
+  <link rel="canonical" href="https://www.votocidadao.com.br/quem-somos.html">
+  <meta name="author" content="Voto Cidadão">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: {} },
+    };
+  </script>
+
+  <!-- Fontes Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:ital,wght@0,400;0,500;0,600;0,700;0,800;1,600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app" class="min-h-screen flex flex-col overflow-x-hidden">
+
+    <!-- ===== HEADER ===== -->
+    <div id="header-wrapper" class="teal-shell relative z-50">
+      <div class="relative z-50 flex items-center justify-between px-5 max-w-[1080px] mx-auto py-4">
+        <!-- Logo -->
+        <a href="index.html#/" class="flex items-center gap-2.5">
+          <img src="img/logo_branca.png" alt="logo do site voto cidadão" title="imagem de voto cidadão, com icone de certo"/>
+        </a>
+
+        <!-- Desktop Nav -->
+        <nav class="desktop-nav hidden lg:flex gap-1 items-center relative z-50">
+          <a href="index.html#/" class="px-3.5 py-2 rounded-full font-bold text-[13.5px] text-white transition-colors hover:bg-white/15">Início</a>
+
+          <div class="relative" id="submenu-trigger" onmouseenter="openSubmenu()" onmouseleave="closeSubmenu()">
+            <a href="index.html#/candidatos" id="nav-candidatos" class="px-3.5 py-2 rounded-full font-bold text-[13.5px] text-white transition-colors hover:bg-white/15 inline-block">Candidatos ▾</a>
+            <div id="submenu" class="absolute top-[calc(100%+8px)] left-0 bg-white text-[var(--ink)] rounded-2xl shadow-[0_16px_36px_rgba(6,56,66,0.22)] p-3.5 w-60 border border-[var(--line)] z-50 hidden">
+              <h4 class="font-data text-xs tracking-wider uppercase text-[var(--ink-soft)] mb-2 px-1">Por cargo</h4>
+              <ul class="list-none space-y-1">
+                <li><a href="index.html#/candidatos?cargo=presidente" class="block w-full text-left px-2 py-1.5 rounded-lg text-sm font-semibold hover:bg-[var(--paper-dim)] hover:text-[var(--teal-deep)]">Presidente da República</a></li>
+                <li><a href="index.html#/candidatos?cargo=governador" class="block w-full text-left px-2 py-1.5 rounded-lg text-sm font-semibold hover:bg-[var(--paper-dim)] hover:text-[var(--teal-deep)]">Governador(a)</a></li>
+                <li><a href="index.html#/candidatos?cargo=senador" class="block w-full text-left px-2 py-1.5 rounded-lg text-sm font-semibold hover:bg-[var(--paper-dim)] hover:text-[var(--teal-deep)]">Senador(a)</a></li>
+                <li><a href="index.html#/candidatos?cargo=deputado-federal" class="block w-full text-left px-2 py-1.5 rounded-lg text-sm font-semibold hover:bg-[var(--paper-dim)] hover:text-[var(--teal-deep)]">Deputado(a) Federal</a></li>
+                <li><a href="index.html#/candidatos?cargo=deputado-estadual" class="block w-full text-left px-2 py-1.5 rounded-lg text-sm font-semibold hover:bg-[var(--paper-dim)] hover:text-[var(--teal-deep)]">Deputado(a) Estadual</a></li>
+                <li><a href="index.html#/candidatos?cargo=deputado-distrital" class="block w-full text-left px-2 py-1.5 rounded-lg text-sm font-semibold hover:bg-[var(--paper-dim)] hover:text-[var(--teal-deep)]">Deputado(a) Distrital</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- <a href="votacoes.html" class="px-3.5 py-2 rounded-full font-bold text-[13.5px] text-white transition-colors hover:bg-white/15">Como votaram?</a> -->
+          <a href="colinha.html" class="px-3.5 py-2 rounded-full font-bold text-[13.5px] text-white transition-colors hover:bg-white/15">Colinha</a>
+          <a href="index.html#/guia-do-eleitor" class="px-3.5 py-2 rounded-full font-bold text-[13.5px] text-white transition-colors hover:bg-white/15">Guia do Eleitor</a>
+          <a href="index.html#/links-uteis" class="px-3.5 py-2 rounded-full font-bold text-[13.5px] text-white transition-colors hover:bg-white/15">Links Úteis</a>
+        </nav>
+
+        <!-- Right side -->
+        <div class="flex items-center gap-2.5">
+          <span class="eleicoes-tag">ELEIÇÕES <b>2026</b></span>
+          <button onclick="openMobileMenu()" class="mobile-menu-btn hidden lg:hidden w-[42px] h-[42px] rounded-xl bg-white/20 flex items-center justify-center shrink-0" aria-label="Abrir menu">
+            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="fixed inset-0 z-[60] bg-[var(--teal-ink)] text-white p-5 overflow-y-auto hidden">
+        <div class="flex justify-end mb-2.5">
+          <button onclick="closeMobileMenu()" class="w-[42px] h-[42px] rounded-xl bg-white/15 flex items-center justify-center" aria-label="Fechar menu">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+          </button>
+        </div>
+        <a href="index.html#/" onclick="closeMobileMenu();" class="block w-full text-left py-3.5 font-display text-lg border-b border-white/15">Início</a>
+        <a href="index.html#/candidatos" onclick="closeMobileMenu();" class="block w-full text-left py-3.5 font-display text-lg border-b border-white/15">Candidatos</a>
+        <!-- <a href="votacoes.html" onclick="closeMobileMenu();" class="block w-full text-left py-3.5 font-display text-lg border-b border-white/15">Como votaram?</a> -->
+        <a href="colinha.html" onclick="closeMobileMenu();" class="block w-full text-left py-3.5 font-display text-lg border-b border-white/15">Colinha</a>
+        <a href="index.html#/guia-do-eleitor" onclick="closeMobileMenu();" class="block w-full text-left py-3.5 font-display text-lg border-b border-white/15">Guia do Eleitor</a>
+        <a href="index.html#/links-uteis" onclick="closeMobileMenu();" class="block w-full text-left py-3.5 font-display text-lg border-b border-white/15">Links Úteis</a>
+        <a href="index.html#/fale-conosco" onclick="closeMobileMenu();" class="block w-full text-left py-3.5 font-display text-lg border-b border-white/15">Fale Conosco</a>
+      </div>
+    </div>
+
+    <!-- ===== MAIN CONTENT (QUEM SOMOS) ===== -->
+    <main id="main-content" class="flex-1">
+      
+      <!-- Seção Hero da Página -->
+      <section class="teal-shell relative overflow-hidden">
+        <span class="blob blob-a"></span>
+        <span class="blob blob-b"></span>
+        <div class="wrap relative pt-8 pb-10 z-20">
+          <div class="text-left">
+            <span class="pill bg-white/20 text-white inline-flex items-center gap-1.5">MANIFESTO E PROPÓSITO</span>
+            <h1 class="font-display text-[28px] sm:text-[34px] mt-2 text-white">Quem Somos</h1>
+            <p class="mt-2 text-[14.5px] text-white/85 leading-relaxed max-w-[640px]">
+              Uma ferramenta cívica, independente e apartidária desenvolvida para organizar dados eleitorais e aproximar o cidadão do debate público com clareza e segurança.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Conteúdo Semântico Moderno -->
+      <article class="wrap py-10">
+        <div class="max-w-[800px] mx-auto space-y-8">
+          
+          <!-- Bloco 1: O Propósito -->
+          <section class="bg-white rounded-2xl p-6 sm:p-8 border border-[var(--line)] shadow-sm space-y-4">
+            <h2 class="font-display text-[20px] text-[var(--teal-deep)]">Nossa Missão</h2>
+            <p class="text-[14.5px] text-[var(--ink-soft)] leading-relaxed">
+              O <strong>Voto Cidadão</strong> nasceu com uma convicção simples: a democracia se fortalece quando a informação é acessível, transparente e livre de ruídos. Em meio ao volume de dados e desinformação que circulam nos períodos eleitorais, nosso objetivo é atuar como uma ponte neutra entre o eleitor e as fontes oficiais do país.
+            </p>
+            <p class="text-[14.5px] text-[var(--ink-soft)] leading-relaxed">
+              Não dizemos em quem você deve votar. Em vez disso, organizamos perfis de candidatos, cargos, atribuições e históricos com rigor técnico para que você possa tomar decisões conscientes e fundamentadas.
+            </p>
+          </section>
+
+          <!-- Bloco 2: Pilares da Iniciativa -->
+          <section class="grid sm:grid-cols-3 gap-4">
+            <div class="bg-white rounded-2xl p-5 border border-[var(--line)] shadow-sm space-y-2">
+              <div class="w-10 h-10 rounded-xl bg-[#EAF5F5] text-[var(--teal-deep)] flex items-center justify-center font-display text-base">01</div>
+              <h3 class="font-display text-[16px] text-[var(--ink)]">Apartidarismo</h3>
+              <p class="text-[13px] text-[var(--ink-soft)] leading-relaxed">Nossa curadoria é estritamente imparcial, sem vínculos com partidos políticos, coligações ou governos. É uma tentativa de melhorar a polarização e estimular a população a conhecer tantos candidatos e pesquisar sobre eles.</p>
+            </div>
+
+            <div class="bg-white rounded-2xl p-5 border border-[var(--line)] shadow-sm space-y-2">
+              <div class="w-10 h-10 rounded-xl bg-[#EAF5F5] text-[var(--teal-deep)] flex items-center justify-center font-display text-base">02</div>
+              <h3 class="font-display text-[16px] text-[var(--ink)]">Fontes Oficiais</h3>
+              <p class="text-[13px] text-[var(--ink-soft)] leading-relaxed">Utilizamos dados abertos e checados diretamente de órgãos públicos, como o TSE, e agências de checagem reconhecidas. Todos os conteúdos compartilhados foram gerados sem interferência política ou partidária</p>
+            </div>
+
+            <div class="bg-white rounded-2xl p-5 border border-[var(--line)] shadow-sm space-y-2">
+              <div class="w-10 h-10 rounded-xl bg-[#EAF5F5] text-[var(--teal-deep)] flex items-center justify-center font-display text-base">03</div>
+              <h3 class="font-display text-[16px] text-[var(--ink)]">Conteúdo</h3>
+              <p class="text-[13px] text-[var(--ink-soft)] leading-relaxed">Por ter sido projetado sem uma grande equipe, alguns conteúdos faltaram, mas que isso não atrapalhe na mensagem central: pesquisar sobre os candidatos e principalmente sobre o que já fizeram em mandatos anteriores.</p>
+            </div>
+          </section>
+
+          <!-- Bloco 3: Compromisso com a Verdade -->
+          <section class="bg-white rounded-2xl p-6 sm:p-8 border border-[var(--line)] shadow-sm space-y-4">
+            <h2 class="font-display text-[20px] text-[var(--teal-deep)]">De onde veio a ideia</h2>
+            <p class="text-[14.5px] text-[var(--ink-soft)] leading-relaxed">
+              A idealizadora do site percebeu, ao longo dos anos, que a politica se transformou não mais em um espaço de debater ideias para melhorar a vida das pessoas e do país, mas sim por brigas generalizadas de ideias pessoais, de sentimentos individuais. Vivemos em sociedade e muitas vezes o que é melhor pra mim, não é o melhor pra voce. Paralelo a isso, as tecnologias que tanto nos ajudam abriram espaço para muita desinformação. E como saber em quem confiar? Tantos politicos que trabalham por seus interesses individuais, que entraram nos cargos e nada fizeram pela população e melhoria do país. Vamos conhece-los melhor, votar mais consciente. Espalhe essa ideia. Pesquise mais sobre os candidatos, sobre o que eles fizeram principalmente. E não se esqueça de votar consciente, pois o voto é a nossa voz.
+            </p>
+            <blockquote class="border-l-4 border-[var(--yellow)] bg-[var(--paper)] p-4 rounded-r-xl text-[14px] text-[var(--ink)] font-medium italic">
+              "Informação clara e verificável é o melhor antídoto contra a desinformação. Vote consciente."
+            </blockquote>
+          </section>
+
+        </div>
+      </article>
+
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="bg-[var(--teal-ink)] text-[#CDEEF0] pt-10 pb-6">
+      <div class="wrap">
+        <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4 lg:gap-6">
+          
+          <!-- Coluna 1: Sobre -->
+          <div>
+            <h5 class="font-display text-white text-sm mb-3">Voto Cidadão</h5>
+            <p class="text-[13.5px] text-[#9FD7DA] leading-relaxed">Informação eleitoral imparcial, verificável e acessível — direto das fontes oficiais, sem viés e sem juízo de valor. Rumo às Eleições 2026.</p>
+          </div>
+
+          <!-- Coluna 2: Navegar -->
+          <div>
+            <h5 class="font-display text-white text-sm mb-3">Navegar</h5>
+            <a href="quem-somos.html" class="block text-[13.5px] text-[#9FD7DA] mb-2 hover:text-white">Quem Somos</a>
+            <a href="index.html#/candidatos" class="block text-[13.5px] text-[#9FD7DA] mb-2 hover:text-white">Candidatos</a>
+            <!-- <a href="votacoes.html" class="block text-[13.5px] text-[#9FD7DA] mb-2 hover:text-white">Como votaram?</a> -->
+            <a href="colinha.html" class="block text-[13.5px] text-[#9FD7DA] mb-2 hover:text-white">Colinha</a>
+          </div>
+
+          <!-- Coluna 3: Ajuda & Suporte -->
+          <div>
+            <h5 class="font-display text-white text-sm mb-3">Ajuda</h5>
+            <a href="index.html#/guia-do-eleitor" class="block text-[13.5px] text-[#9FD7DA] mb-2 hover:text-white">Guia do Eleitor</a>
+            <a href="index.html#/links-uteis" class="block text-[13.5px] text-[#9FD7DA] mb-2 hover:text-white">Links Úteis</a>
+            <a href="index.html#/fale-conosco" class="block text-[13.5px] text-[#9FD7DA] mb-2 hover:text-white">Fale Conosco</a>
+          </div>
+
+          <!-- Coluna 4: Fontes Oficial -->
+          <div>
+            <h5 class="font-display text-white text-sm mb-3">Fontes oficiais</h5>
+            <a href="https://divulgacandcontas.tse.jus.br" target="_blank" rel="noopener" class="block text-[13.5px] text-[#9FD7DA] mb-2 hover:text-white">TSE — DivulgaCandContas</a>
+            <a href="https://www.justicaeleitoral.jus.br/fato-ou-boato" target="_blank" rel="noopener" class="block text-[13.5px] text-[#9FD7DA] mb-2 hover:text-white">Fato ou Boato</a>
+          </div>
+
+        </div>
+
+        <p class="mt-8 pt-4 border-t border-white/15 text-xs text-center text-[#6FA9AD]">Projeto independente e apartidário. O intuito é organizar de forma mais acessível as principais informações para o cidadão conseguir votar consciente.</p>
+      </div>
+    </footer>
+
+    <!-- ===== SENIOR FAB ===== -->
+    <button id="senior-fab" onclick="toggleSenior()" class="fixed bottom-5 right-5 z-[70] bg-[var(--yellow)] text-[var(--teal-ink)] w-[58px] h-[58px] rounded-full font-display text-[15px] shadow-[0_16px_36px_rgba(6,56,66,0.22)] flex items-center justify-center border-[3px] border-[var(--teal-ink)]" title="Modo acessibilidade sênior">Aa+</button>
+    <div id="senior-toast" class="fixed bottom-[90px] left-1/2 -translate-x-1/2 bg-[var(--ink)] text-white px-4.5 py-3 rounded-full text-[13.5px] font-semibold z-[80] hidden"></div>
+
+  </div>
+
+  <!-- Scripts básicos de menu e acessibilidade -->
+  <script>
+    function openSubmenu() { document.getElementById("submenu")?.classList.remove("hidden"); }
+    function closeSubmenu() { document.getElementById("submenu")?.classList.add("hidden"); }
+    function openMobileMenu() {
+      document.getElementById("mobile-menu")?.classList.remove("hidden");
+      document.body.style.overflow = "hidden";
+    }
+    function closeMobileMenu() {
+      document.getElementById("mobile-menu")?.classList.add("hidden");
+      document.body.style.overflow = "";
+    }
+    let seniorMode = false;
+    function toggleSenior() {
+      seniorMode = !seniorMode;
+      const htmlEl = document.documentElement;
+      const toast = document.getElementById("senior-toast");
+      if (seniorMode) {
+        htmlEl.classList.add("senior");
+        if (toast) {
+          toast.innerText = "Modo acessibilidade sênior ativado";
+          toast.classList.remove("hidden");
+          setTimeout(() => toast.classList.add("hidden"), 3000);
+        }
+      } else {
+        htmlEl.classList.remove("senior");
+        if (toast) {
+          toast.innerText = "Modo acessibilidade sênior desativado";
+          toast.classList.remove("hidden");
+          setTimeout(() => toast.classList.add("hidden"), 3000);
+        }
+      }
+    }
+  </script>
+</body>
+</html>

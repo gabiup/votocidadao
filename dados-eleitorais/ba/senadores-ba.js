@@ -1,0 +1,122 @@
+window.CandidatosSenadoresBA = [
+  {
+    id: "senador-ba-angelo-coronel",
+    nome: "ANGELO CORONEL",
+    nomeCompleto: "Angelo Mario Coronel de Azevedo Martins",
+    partido: "REPUBLICANOS",
+    numero: 101,
+    cargo: "senador",
+    uf: "BA",
+    color: "#159AAE",
+    pautas: ["Administração pública", "Articulação legislativa"],
+    idade: 68
+  },
+  {
+    id: "senador-ba-carlos-sodre",
+    nome: "CARLOS SODRÉ",
+    nomeCompleto: "Carlos Eduardo Sodré",
+    partido: "MOBILIZA",
+    numero: 333,
+    cargo: "senador",
+    uf: "BA",
+    color: "#1E4FA6",
+    pautas: ["Desenvolvimento regional", "Relações institucionais"],
+    idade: 80
+  },
+  {
+    id: "senador-ba-gregorio-gould",
+    nome: "GREGORIO GOULD",
+    nomeCompleto: "Gregorio Motta Gould",
+    partido: "UP",
+    numero: 800,
+    cargo: "senador",
+    uf: "BA",
+    color: "#2FA84F",
+    pautas: ["Movimentos sociais", "Direitos urbanos"],
+    idade: 40
+  },
+  {
+    id: "senador-ba-jaques-wagner",
+    nome: "JAQUES WAGNER",
+    nomeCompleto: "Jaques Wagner",
+    partido: "PT",
+    numero: 131,
+    cargo: "senador",
+    uf: "BA",
+    color: "#E4402F",
+    pautas: ["Gestão pública", "Desenvolvimento econômico"],
+    idade: 75
+  },
+  {
+    id: "senador-ba-joao-roma",
+    nome: "JOÃO ROMA",
+    nomeCompleto: "João Inácio Ribeiro Roma Neto",
+    partido: "PL",
+    numero: 222,
+    cargo: "senador",
+    uf: "BA",
+    color: "#0A5C6B",
+    pautas: ["Políticas sociais", "Administração federal"],
+    idade: 53
+  },
+  {
+    id: "senador-ba-marcelo-carvalho",
+    nome: "MARCELO CARVALHO",
+    nomeCompleto: "Marcelo Carvalho Lavigne",
+    partido: "REDE",
+    numero: 180,
+    cargo: "senador",
+    uf: "BA",
+    color: "#7A5300",
+    pautas: ["Sustentabilidade", "Ação cidadã"],
+    idade: 45
+  },
+  {
+    id: "senador-ba-marcelo-millet",
+    nome: "MARCELO MILLET",
+    nomeCompleto: "Marcelo Millet Oliveira",
+    partido: "PCO",
+    numero: 290,
+    cargo: "senador",
+    uf: "BA",
+    color: "#159AAE",
+    pautas: ["Direitos trabalhistas", "Serviço público"],
+    idade: 40
+  },
+  {
+    id: "senador-ba-marcelo-santtana",
+    nome: "MARCELO SANTTANA",
+    nomeCompleto: "Marcelino José Guimarães Santana",
+    partido: "DC",
+    numero: 277,
+    cargo: "senador",
+    uf: "BA",
+    color: "#1E4FA6",
+    pautas: ["Gestão municipal", "Cidadania"],
+    idade: 68
+  },
+  {
+    id: "senador-ba-professora-delliana",
+    nome: "PROFESSORA DELLIANA",
+    nomeCompleto: "Delliana Ricelli Ribeiro da Silva",
+    partido: "PSOL",
+    numero: 500,
+    cargo: "senador",
+    uf: "BA",
+    color: "#2FA84F",
+    pautas: ["Educação pública", "Direitos sociais"],
+    idade: 43
+  },
+  {
+    id: "senador-ba-rui-costa",
+    nome: "RUI COSTA",
+    nomeCompleto: "Rui Costa dos Santos",
+    partido: "PT",
+    numero: 133,
+    cargo: "senador",
+    uf: "BA",
+    color: "#E4402F",
+    pautas: ["Infraestrutura", "Gestão governamental"],
+    idade: 63
+  }
+];

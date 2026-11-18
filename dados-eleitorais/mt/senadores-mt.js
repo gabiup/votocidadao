@@ -1,0 +1,122 @@
+window.CandidatosSenadoresMT = [
+  {
+    id: "senador-mt-beny-godoy",
+    nome: "BENY GODOY",
+    nomeCompleto: "Benival Alves da Silva",
+    partido: "AGIR",
+    numero: 365,
+    cargo: "senador",
+    uf: "MT",
+    color: "#159AAE",
+    pautas: ["Desenvolvimento local", "Ação comunitária"],
+    idade: 53
+  },
+  {
+    id: "senador-mt-coronel-darwin",
+    nome: "CORONEL DARWIN",
+    nomeCompleto: "Darwin Salgado Germano",
+    partido: "DEMOCRATA",
+    numero: 351,
+    cargo: "senador",
+    uf: "MT",
+    color: "#1E4FA6",
+    pautas: ["Segurança pública", "Fiscalização rigorosa"],
+    idade: 48
+  },
+  {
+    id: "senador-mt-favaro",
+    nome: "FÁVARO",
+    nomeCompleto: "Carlos Henrique Baqueta Fávaro",
+    partido: "PSD",
+    numero: 555,
+    cargo: "senador",
+    uf: "MT",
+    color: "#2FA84F",
+    pautas: ["Agricultura", "Desenvolvimento econômico"],
+    idade: 56
+  },
+  {
+    id: "senador-mt-galvan",
+    nome: "GALVAN",
+    nomeCompleto: "Antônio Galvan",
+    partido: "AVANTE",
+    numero: 700,
+    cargo: "senador",
+    uf: "MT",
+    color: "#E4402F",
+    pautas: ["Agronegócio", "Defesa do setor produtivo"],
+    idade: 68
+  },
+  {
+    id: "senador-mt-janaina-riva",
+    nome: "JANAINA RIVA",
+    nomeCompleto: "Janaina Greyce Riva Gagundes",
+    partido: "MDB",
+    numero: 150,
+    cargo: "senador",
+    uf: "MT",
+    color: "#0A5C6B",
+    pautas: ["Gestão pública", "Políticas sociais"],
+    idade: 37
+  },
+  {
+    id: "senador-mt-margareth-buzetti",
+    nome: "MARGARETH BUZETTI",
+    nomeCompleto: "Margareth Gettert Busetti",
+    partido: "PP",
+    numero: 111,
+    cargo: "senador",
+    uf: "MT",
+    color: "#7A5300",
+    pautas: ["Empreendedorismo", "Legislação federal"],
+    idade: 66
+  },
+  {
+    id: "senador-mt-mauro-mendes",
+    nome: "MAURO MENDES",
+    nomeCompleto: "Mauro Mendes Ferreira",
+    partido: "UNIÃO",
+    numero: 444,
+    cargo: "senador",
+    uf: "MT",
+    color: "#159AAE",
+    pautas: ["Gestão administrativa", "Infraestrutura"],
+    idade: 62
+  },
+  {
+    id: "senador-mt-pedro-taques",
+    nome: "PEDRO TAQUES",
+    nomeCompleto: "Jose Pedro Gonçalves Taques",
+    partido: "PSB",
+    numero: 400,
+    cargo: "senador",
+    uf: "MT",
+    color: "#1E4FA6",
+    pautas: ["Combate à corrupção", "Justiça e legalidade"],
+    idade: 58
+  },
+  {
+    id: "senador-mt-professor-nelson-ferreira",
+    nome: "PROFESSOR NELSON FERREIRA",
+    nomeCompleto: "Nelson Carlos Ferreira Junior",
+    partido: "AGIR",
+    numero: 360,
+    cargo: "senador",
+    uf: "MT",
+    color: "#2FA84F",
+    pautas: ["Educação pública", "Valorização profissional"],
+    idade: 53
+  },
+  {
+    id: "senador-mt-ze-medeiros",
+    nome: "ZÉ MEDEIROS",
+    nomeCompleto: "José Antônio dos Santos Medeiros",
+    partido: "PL",
+    numero: 222,
+    cargo: "senador",
+    uf: "MT",
+    color: "#E4402F",
+    pautas: ["Valores conservadores", "Atuação parlamentar"],
+    idade: 56
+  }
+];

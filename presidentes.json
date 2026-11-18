@@ -1,0 +1,366 @@
+[
+  {
+    "id": 1,
+    "numero": 13,
+    "coligacao": "BRASIL PRONTO PRA MAIS",
+    "composicao_coligacao": "PSB / PDT / FEDERAÇÃO BRASIL DA ESPERANÇA - FE BRASIL (PT / PC do B / PV) / FEDERAÇÃO PSOL REDE (PSOL / REDE)",
+    "presidente": {
+      "sq_candidato": 280002542548,
+      "nome_urna": "LULA",
+      "nome_completo": "LUIZ INÁCIO LULA DA SILVA",
+      "partido_sigla": "PT",
+      "partido_nome": "PARTIDO DOS TRABALHADORES",
+      "genero": "MASCULINO",
+      "grau_instrucao": "ENSINO FUNDAMENTAL COMPLETO",
+      "ocupacao": "TORNEIRO MECÂNICO",
+      "uf_nascimento": "PE"
+    },
+    "vice": {
+      "sq_candidato": 280002542549,
+      "nome_urna": "GERALDO ALCKMIN",
+      "nome_completo": "GERALDO JOSE RODRIGUES ALCKMIN FILHO",
+      "partido_sigla": "PSB",
+      "partido_nome": "PARTIDO SOCIALISTA BRASILEIRO",
+      "genero": "MASCULINO",
+      "grau_instrucao": "SUPERIOR COMPLETO",
+      "ocupacao": "MÉDICO",
+      "uf_nascimento": "SP"
+    }
+  },
+  {
+    "id": 2,
+    "numero": 14,
+    "coligacao": null,
+    "composicao_coligacao": "MISSÃO",
+    "presidente": {
+      "sq_candidato": 280002540694,
+      "nome_urna": "RENAN SANTOS",
+      "nome_completo": "RENAN ANTONIO FERREIRA DOS SANTOS",
+      "partido_sigla": "MISSÃO",
+      "partido_nome": "PARTIDO MISSÃO",
+      "genero": "MASCULINO",
+      "grau_instrucao": "SUPERIOR INCOMPLETO",
+      "ocupacao": "EMPRESÁRIO",
+      "uf_nascimento": "SP"
+    },
+    "vice": {
+      "sq_candidato": 280002540693,
+      "nome_urna": "CORONEL MEDINA",
+      "nome_completo": "AROLDO MEDINA",
+      "partido_sigla": "MISSÃO",
+      "partido_nome": "PARTIDO MISSÃO",
+      "genero": "MASCULINO",
+      "grau_instrucao": "SUPERIOR COMPLETO",
+      "ocupacao": "POLICIAL MILITAR",
+      "uf_nascimento": "RS"
+    }
+  },
+  {
+    "id": 3,
+    "numero": 16,
+    "coligacao": null,
+    "composicao_coligacao": "PSTU",
+    "presidente": {
+      "sq_candidato": 280002541457,
+      "nome_urna": "HERTZ DIAS",
+      "nome_completo": "HERTZ DA CONCEICAO DIAS",
+      "partido_sigla": "PSTU",
+      "partido_nome": "PARTIDO SOCIALISTA DOS TRABALHADORES UNIFICADO",
+      "genero": "MASCULINO",
+      "grau_instrucao": "SUPERIOR COMPLETO",
+      "ocupacao": "PROFESSOR DE ENSINO FUNDAMENTAL",
+      "uf_nascimento": "MA"
+    },
+    "vice": {
+      "sq_candidato": 280002541458,
+      "nome_urna": "VANESSA PORTUGAL",
+      "nome_completo": "VANESSA PORTUGAL BARBOSA",
+      "partido_sigla": "PSTU",
+      "partido_nome": "PARTIDO SOCIALISTA DOS TRABALHADORES UNIFICADO",
+      "genero": "FEMININO",
+      "grau_instrucao": "SUPERIOR COMPLETO",
+      "ocupacao": "PROFESSOR DE ENSINO FUNDAMENTAL",
+      "uf_nascimento": "MG"
+    }
+  },
+  {
+    "id": 4,
+    "numero": 21,
+    "coligacao": null,
+    "composicao_coligacao": "PCB",
+    "presidente": {
+      "sq_candidato": 280002551975,
+      "nome_urna": "EDMILSON COSTA",
+      "nome_completo": "EDMILSON SILVA COSTA",
+      "partido_sigla": "PCB",
+      "partido_nome": "PARTIDO COMUNISTA BRASILEIRO",
+      "genero": "MASCULINO",
+      "grau_instrucao": "SUPERIOR COMPLETO",
+      "ocupacao": "APOSENTADO (EXCETO SERVIDOR PÚBLICO)",
+      "uf_nascimento": "MA"
+    },
+    "vice": {
+      "sq_candidato": 280002551976,
+      "nome_urna": "CLEUSA SANTOS",
+      "nome_completo": "CLEUSA DOS SANTOS",
+      "partido_sigla": "PCB",
+      "partido_nome": "PARTIDO COMUNISTA BRASILEIRO",
+      "genero": "FEMININO",
+      "grau_instrucao": "SUPERIOR COMPLETO",
+      "ocupacao": "SERVIDOR PÚBLICO CIVIL APOSENTADO",
+      "uf_nascimento": "GO"
+    }
+  },
+  {
+    "id": 5,
+    "numero": 22,
+    "coligacao": null,
+    "composicao_coligacao": "PL",
+    "presidente": {
+      "sq_candidato": 280002551544,
+      "nome_urna": "FLAVIO BOLSONARO",
+      "nome_completo": "FLAVIO NANTES BOLSONARO",
+      "partido_sigla": "PL",
+      "partido_nome": "PARTIDO LIBERAL",
+      "genero": "MASCULINO",
+      "grau_instrucao": "SUPERIOR COMPLETO",
+      "ocupacao": "SENADOR",
+      "uf_nascimento": "RJ"
+    },
+    "vice": {
+      "sq_candidato": 280002551543,
+      "nome_urna": "ALFREDO GASPAR",
+      "nome_completo": "ALFREDO GASPAR DE MENDONÇA NETO",
+      "partido_sigla": "PL",
+      "partido_nome": "PARTIDO LIBERAL",
+      "genero": "MASCULINO",
+      "grau_instrucao": "SUPERIOR COMPLETO",
+      "ocupacao": "DEPUTADO",
+      "uf_nascimento": "AL"
+    }
+  },
+  {
+    "id": 6,
+    "numero": 27,
+    "coligacao": null,
+    "composicao_coligacao": "DC",
+    "presidente": {
+      "sq_candidato": 280002552484,
+      "nome_urna": "CLARIANA BARAO",
+      "nome_completo": "CLARIANA ZACARKIM BARAO",
+      "partido_sigla": "DC",
+      "partido_nome": "DEMOCRACIA CRISTÃ",
+      "genero": "FEMININO",
+      "grau_instrucao": "SUPERIOR COMPLETO",
+      "ocupacao": "ADVOGADO",
+      "uf_nascimento": "MT"
+    },
+    "vice": {
+      "sq_candidato": 280002552485,
+      "nome_urna": "FABIANA TORQUATO",
+      "nome_completo": "FABIANA CRISTINA TAVARES TORQUATO",
+      "partido_sigla": "DC",
+      "partido_nome": "DEMOCRACIA CRISTÃ",
+      "genero": "FEMININO",
+      "grau_instrucao": "SUPERIOR COMPLETO",
+      "ocupacao": "ADVOGADO",
+      "uf_nascimento": "SP"
+    }
+  },
+  {
+    "id": 7,
+    "numero": 28,
+    "coligacao": null,
+    "composicao_coligacao": "PRTB",
+    "presidente": {
+      "sq_candidato": 280002553884,
+      "nome_urna": "PABLO MARÇAL",
+      "nome_completo": "PABLO HENRIQUE COSTA MARCAL",
+      "partido_sigla": "PRTB",
+      "partido_nome": "PARTIDO RENOVADOR TRABALHISTA BRASILEIRO",
+      "genero": "MASCULINO",
+      "grau_instrucao": "SUPERIOR COMPLETO",
+      "ocupacao": "DIRETOR DE EMPRESAS",
+      "uf_nascimento": "GO"
+    },
+    "vice": {
+      "sq_candidato": 280002553883,
+      "nome_urna": "LEONARDO AVALANCHE",
+      "nome_completo": "LEONARDO ALVES DE ARAUJO",
+      "partido_sigla": "PRTB",
+      "partido_nome": "PARTIDO RENOVADOR TRABALHISTA BRASILEIRO",
+      "genero": "MASCULINO",
+      "grau_instrucao": "SUPERIOR COMPLETO",
+      "ocupacao": "SERVIDOR PÚBLICO ESTADUAL",
+      "uf_nascimento": "GO"
+    }
+  },
+  {
+    "id": 8,
+    "numero": 29,
+    "coligacao": null,
+    "composicao_coligacao": "PCO",
+    "presidente": {
+      "sq_candidato": 280002552487,
+      "nome_urna": "RUI COSTA PIMENTA",
+      "nome_completo": "RUI COSTA PIMENTA",
+      "partido_sigla": "PCO",
+      "partido_nome": "PARTIDO DA CAUSA OPERÁRIA",
+      "genero": "MASCULINO",
+      "grau_instrucao": "SUPERIOR COMPLETO",
+      "ocupacao": "JORNALISTA E REDATOR",
+      "uf_nascimento": "SP"
+    },
+    "vice": {
+      "sq_candidato": 280002552486,
+      "nome_urna": "ANTÔNIO CARLOS",
+      "nome_completo": "ANTONIO CARLOS SILVA",
+      "partido_sigla": "PCO",
+      "partido_nome": "PARTIDO DA CAUSA OPERÁRIA",
+      "genero": "MASCULINO",
+      "grau_instrucao": "SUPERIOR COMPLETO",
+      "ocupacao": "SERVIDOR PÚBLICO ESTADUAL",
+      "uf_nascimento": "RJ"
+    }
+  },
+  {
+    "id": 9,
+    "numero": 30,
+    "coligacao": null,
+    "composicao_coligacao": "NOVO",
+    "presidente": {
+      "sq_candidato": 280002539826,
+      "nome_urna": "ZEMA",
+      "nome_completo": "ROMEU ZEMA NETO",
+      "partido_sigla": "NOVO",
+      "partido_nome": "PARTIDO NOVO",
+      "genero": "MASCULINO",
+      "grau_instrucao": "SUPERIOR COMPLETO",
+      "ocupacao": "EMPRESÁRIO",
+      "uf_nascimento": "MG"
+    },
+    "vice": {
+      "sq_candidato": 280002539825,
+      "nome_urna": "EDUARDO GIRÃO",
+      "nome_completo": "LUIS EDUARDO GRANGEIRO GIRÃO",
+      "partido_sigla": "NOVO",
+      "partido_nome": "PARTIDO NOVO",
+      "genero": "MASCULINO",
+      "grau_instrucao": "SUPERIOR INCOMPLETO",
+      "ocupacao": "SENADOR",
+      "uf_nascimento": "CE"
+    }
+  },
+  {
+    "id": 10,
+    "numero": 35,
+    "coligacao": null,
+    "composicao_coligacao": "DEMOCRATA",
+    "presidente": {
+      "sq_candidato": 280002548139,
+      "nome_urna": "VETERINÁRIO WILSON GRASSI",
+      "nome_completo": "WILSON GRASSI JUNIOR",
+      "partido_sigla": "DEMOCRATA",
+      "partido_nome": "DEMOCRATA",
+      "genero": "MASCULINO",
+      "grau_instrucao": "SUPERIOR COMPLETO",
+      "ocupacao": "VETERINÁRIO",
+      "uf_nascimento": "SP"
+    },
+    "vice": {
+      "sq_candidato": 280002548140,
+      "nome_urna": "SUÊD HAIDAR",
+      "nome_completo": "SUÊD HAIDAR NOGUEIRA",
+      "partido_sigla": "DEMOCRATA",
+      "partido_nome": "DEMOCRATA",
+      "genero": "FEMININO",
+      "grau_instrucao": "ENSINO MÉDIO COMPLETO",
+      "ocupacao": "EMPRESÁRIO",
+      "uf_nascimento": "MA"
+    }
+  },
+  {
+    "id": 11,
+    "numero": 55,
+    "coligacao": null,
+    "composicao_coligacao": "PSD",
+    "presidente": {
+      "sq_candidato": 280002551932,
+      "nome_urna": "RONALDO CAIADO",
+      "nome_completo": "RONALDO RAMOS CAIADO",
+      "partido_sigla": "PSD",
+      "partido_nome": "PARTIDO SOCIAL DEMOCRÁTICO",
+      "genero": "MASCULINO",
+      "grau_instrucao": "SUPERIOR COMPLETO",
+      "ocupacao": "MÉDICO",
+      "uf_nascimento": "GO"
+    },
+    "vice": {
+      "sq_candidato": 280002551933,
+      "nome_urna": "GILBERTO KASSAB",
+      "nome_completo": "GILBERTO KASSAB",
+      "partido_sigla": "PSD",
+      "partido_nome": "PARTIDO SOCIAL DEMOCRÁTICO",
+      "genero": "MASCULINO",
+      "grau_instrucao": "SUPERIOR COMPLETO",
+      "ocupacao": "ENGENHEIRO",
+      "uf_nascimento": "SP"
+    }
+  },
+  {
+    "id": 12,
+    "numero": 70,
+    "coligacao": "BRASIL DOS NOSSOS SONHOS",
+    "composicao_coligacao": "AGIR / AVANTE",
+    "presidente": {
+      "sq_candidato": 280002551547,
+      "nome_urna": "ESCRITOR AUGUSTO CURY",
+      "nome_completo": "AUGUSTO JORGE CURY",
+      "partido_sigla": "AVANTE",
+      "partido_nome": "AVANTE",
+      "genero": "MASCULINO",
+      "grau_instrucao": "SUPERIOR COMPLETO",
+      "ocupacao": "ESCRITOR E CRÍTICO",
+      "uf_nascimento": "SP"
+    },
+    "vice": {
+      "sq_candidato": 280002551546,
+      "nome_urna": "JÚLIO DELGADO",
+      "nome_completo": "JULIO CESAR DELGADO",
+      "partido_sigla": "AVANTE",
+      "partido_nome": "AVANTE",
+      "genero": "MASCULINO",
+      "grau_instrucao": "SUPERIOR COMPLETO",
+      "ocupacao": "ADVOGADO",
+      "uf_nascimento": "MG"
+    }
+  },
+  {
+    "id": 13,
+    "numero": 80,
+    "coligacao": null,
+    "composicao_coligacao": "UP",
+    "presidente": {
+      "sq_candidato": 280002538811,
+      "nome_urna": "SAMARA",
+      "nome_completo": "SAMARA MARTINS DA SILVA FEITOSA",
+      "partido_sigla": "UP",
+      "partido_nome": "UNIDADE POPULAR",
+      "genero": "FEMININO",
+      "grau_instrucao": "SUPERIOR COMPLETO",
+      "ocupacao": "ODONTÓLOGO",
+      "uf_nascimento": "MG"
+    },
+    "vice": {
+      "sq_candidato": 280002538812,
+      "nome_urna": "RAQUEL BRÍCIO",
+      "nome_completo": "RAQUEL NONATO DE BRICIO",
+      "partido_sigla": "UP",
+      "partido_nome": "UNIDADE POPULAR",
+      "genero": "FEMININO",
+      "grau_instrucao": "SUPERIOR COMPLETO",
+      "ocupacao": "VIGILANTE",
+      "uf_nascimento": "PA"
+    }
+  }
+]

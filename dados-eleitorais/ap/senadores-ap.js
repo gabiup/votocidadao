@@ -1,0 +1,110 @@
+window.CandidatosSenadoresAP = [
+  {
+    id: "senador-ap-acacio-favacho",
+    nome: "ACÁCIO FAVACHO",
+    nomeCompleto: "Acacio da Silva Favacho",
+    partido: "MDB",
+    numero: 150,
+    cargo: "senador",
+    uf: "AP",
+    color: "#159AAE",
+    pautas: ["Articulação política", "Desenvolvimento estadual"],
+    idade: 41
+  },
+  {
+    id: "senador-ap-alliny-serrao",
+    nome: "ALLINY SERRÃO",
+    nomeCompleto: "Alliny Sousa da Rocha Serraon",
+    partido: "UNIÃO",
+    numero: 444,
+    cargo: "senador",
+    uf: "AP",
+    color: "#1E4FA6",
+    pautas: ["Gestão legislativa", "Ação social"],
+    idade: 39
+  },
+  {
+    id: "senador-ap-capi",
+    nome: "CAPI",
+    nomeCompleto: "João Alberto Capiberibe",
+    partido: "PSB",
+    numero: 400,
+    cargo: "senador",
+    uf: "AP",
+    color: "#2FA84F",
+    pautas: ["Administração pública", "Defesa da Amazônia"],
+    idade: 79
+  },
+  {
+    id: "senador-ap-helio-silva",
+    nome: "HELIO SILVA",
+    nomeCompleto: "Helio Palheta Silva",
+    partido: "PCO",
+    numero: 290,
+    cargo: "senador",
+    uf: "AP",
+    color: "#E4402F",
+    pautas: ["Direitos trabalhistas", "Serviços públicos"],
+    idade: 45
+  },
+  {
+    id: "senador-ap-juiza-jo",
+    nome: "JUÍZA JÔ",
+    nomeCompleto: "Joaniza da Silva Leme",
+    partido: "DC",
+    numero: 277,
+    cargo: "senador",
+    uf: "AP",
+    color: "#0A5C6B",
+    pautas: ["Justiça social", "Cidadania"],
+    idade: 53
+  },
+  {
+    id: "senador-ap-lucas-barreto",
+    nome: "LUCAS BARRETO",
+    nomeCompleto: "Luiz Cantuaria Barreto",
+    partido: "PSD",
+    numero: 555,
+    cargo: "senador",
+    uf: "AP",
+    color: "#7A5300",
+    pautas: ["Infraestrutura", "Desenvolvimento regional"],
+    idade: 62
+  },
+  {
+    id: "senador-ap-professor-uzian-pinto",
+    nome: "PROFESSOR UZIAN PINTO",
+    nomeCompleto: "Uzian Pinto Machado",
+    partido: "DC",
+    numero: 272,
+    cargo: "senador",
+    uf: "AP",
+    color: "#159AAE",
+    pautas: ["Educação", "Direitos acadêmicos"],
+    idade: 48
+  },
+  {
+    id: "senador-ap-randolfe-rodrigues",
+    nome: "RANDOLFE RODRIGUES",
+    nomeCompleto: "Randolph Frederich Rodrigues Alves",
+    partido: "PT",
+    numero: 130,
+    cargo: "senador",
+    uf: "AP",
+    color: "#1E4FA6",
+    pautas: ["Fiscalização federal", "Democracia e instituições"],
+    idade: 53
+  },
+  {
+    id: "senador-ap-rayssa-furlan",
+    nome: "RAYSSA FURLAN",
+    nomeCompleto: "Rayssa Cadena Furlan",
+    partido: "PODE",
+    numero: 200,
+    cargo: "senador",
+    uf: "AP",
+    color: "#2FA84F",
+    pautas: ["Assistência social", "Desenvolvimento comunitário"],
+    idade: 36
+  }
+];

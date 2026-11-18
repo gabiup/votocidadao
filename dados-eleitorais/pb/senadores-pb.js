@@ -1,0 +1,122 @@
+window.CandidatosSenadoresPB = [
+  {
+    id: "senador-pb-adriano-trajano",
+    nome: "ADRIANO TRAJANO",
+    nomeCompleto: "Adriano Trajano da Conceição",
+    partido: "PCO",
+    numero: 290,
+    cargo: "senador",
+    uf: "PB",
+    color: "#159AAE",
+    pautas: ["Defesa dos trabalhadores", "Serviços públicos"],
+    idade: 52
+  },
+  {
+    id: "senador-pb-andre-gadelha",
+    nome: "ANDRÉ GADELHA",
+    nomeCompleto: "André Gadelha de Abrantes",
+    partido: "MDB",
+    numero: 151,
+    cargo: "senador",
+    uf: "PB",
+    color: "#1E4FA6",
+    pautas: ["Gestão municipal", "Desenvolvimento regional"],
+    idade: 51
+  },
+  {
+    id: "senador-pb-dr-marcelo-queiroga",
+    nome: "DR. MARCELO QUEIROGA",
+    nomeCompleto: "Marcelo Antônio Cartaxo Queiroga Lopes",
+    partido: "PL",
+    numero: 222,
+    cargo: "senador",
+    uf: "PB",
+    color: "#2FA84F",
+    pautas: ["Saúde pública", "Valores conservadores"],
+    idade: 60
+  },
+  {
+    id: "senador-pb-joao-azevedo",
+    nome: "JOÃO AZEVÊDO",
+    nomeCompleto: "João Azevêdo Lins Filho",
+    partido: "PSB",
+    numero: 400,
+    cargo: "senador",
+    uf: "PB",
+    color: "#E4402F",
+    pautas: ["Infraestrutura", "Gestão governamental"],
+    idade: 73
+  },
+  {
+    id: "senador-pb-joao-batista",
+    nome: "JOÃO BATISTA",
+    nomeCompleto: "João Batista Domingos",
+    partido: "UP",
+    numero: 800,
+    cargo: "senador",
+    uf: "PB",
+    color: "#0A5C6B",
+    pautas: ["Movimentos sociais", "Direitos trabalhistas"],
+    idade: 45
+  },
+  {
+    id: "senador-pb-major-fabio",
+    nome: "MAJOR FÁBIO",
+    nomeCompleto: "Fábio Rodrigues de Oliveira",
+    partido: "NOVO",
+    numero: 300,
+    cargo: "senador",
+    uf: "PB",
+    color: "#7A5300",
+    pautas: ["Segurança pública", "Fiscalização eficiente"],
+    idade: 56
+  },
+  {
+    id: "senador-pb-nabor",
+    nome: "NABOR",
+    nomeCompleto: "Nabor Wanderley da Nobrega Filho",
+    partido: "REPUBLICANOS",
+    numero: 100,
+    cargo: "senador",
+    uf: "PB",
+    color: "#159AAE",
+    pautas: ["Administração pública", "Articulação municipal"],
+    idade: 60
+  },
+  {
+    id: "senador-pb-rinaldo-junior",
+    nome: "RINALDO JÚNIOR",
+    nomeCompleto: "Rinaldo Elias Pereira Junior",
+    partido: "DC",
+    numero: 277,
+    cargo: "senador",
+    uf: "PB",
+    color: "#1E4FA6",
+    pautas: ["Cidadania", "Ação comunitária"],
+    idade: 37
+  },
+  {
+    id: "senador-pb-rosilene-santana",
+    nome: "ROSILENE SANTANA",
+    nomeCompleto: "Rosilene da Silva Santana",
+    partido: "UP",
+    numero: 801,
+    cargo: "senador",
+    uf: "PB",
+    color: "#2FA84F",
+    pautas: ["Educação pública", "Direitos sociais"],
+    idade: 43
+  },
+  {
+    id: "senador-pb-veneziano",
+    nome: "VENEZIANO",
+    nomeCompleto: "Veneziano Vital do Rêgo Segundo Neto",
+    partido: "MDB",
+    numero: 155,
+    cargo: "senador",
+    uf: "PB",
+    color: "#E4402F",
+    pautas: ["Atuação parlamentar", "Pacto federativo"],
+    idade: 56
+  }
+];
